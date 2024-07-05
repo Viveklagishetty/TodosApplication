@@ -1,0 +1,160 @@
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    margin-right: 16px;
+    word-break: break-word;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .edit-task-button,
+  .delete-task-button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  
+  .edit-task-button {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .edit-task-button:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-task-button {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .delete-task-button:hover {
+    background-color: #e53935;
+  }
+  
+  .edit-task-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .edit-task-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .edit-task-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .save-edit-button,
+  .cancel-edit-button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  
+  .save-edit-button {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .save-edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel-edit-button {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .cancel-edit-button:hover {
+    background-color: #b3b3b3;
+  }
+  
+  @media (max-width: 767px) {
+    .task-list {
+      width: 100%;
+    }
+  
+    .task-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-text {
+      margin-bottom: 8px;
+    }
+  
+    .task-buttons {
+      justify-content: flex-start;
+    }
+  
+    .edit-task-input {
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .task-list {
+      width: 80%;
+    }
+  
+    .task-item {
+      flex-wrap: nowrap;
+    }
+  
+    .edit-task-input {
+      max-width: 60%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .task-list {
+      width: 70%;
+    }
+  
+    .edit-task-input {
+      max-width: 400px;
+    }
+  }

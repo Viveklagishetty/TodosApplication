@@ -1,0 +1,75 @@
+.task-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .task-input {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .add-task-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .add-task-button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 767px) {
+    .task-input {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .add-task-button {
+      width: 100%;
+      max-width: 100%;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .task-input {
+      width: 60%;
+      max-width: 60%;
+    }
+  
+    .add-task-button {
+      width: 40%;
+      max-width: 40%;
+      padding: 10px 18px;
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .task-input {
+      width: 300px;
+      max-width: 300px;
+    }
+  
+    .add-task-button {
+      width: auto;
+      max-width: none;
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  }
